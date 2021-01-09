@@ -1,0 +1,139 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="close-button.png" />
+    <None Remove="cogs-gears-machine-preferences-settings-icon-cogs-icon-gears-651265.png" />
+    <None Remove="DECREASE.png" />
+    <None Remove="DEMOTED.png" />
+    <None Remove="haven-splash-cropped.jpg" />
+    <None Remove="INCREASE.png" />
+    <None Remove="Loading_Screen_Haven.png" />
+    <None Remove="MAJOR_DECREASE.png" />
+    <None Remove="MAJOR_INCREASE.png" />
+    <None Remove="MINOR_DECREASE.png" />
+    <None Remove="MINOR_INCREASE.png" />
+    <None Remove="PinClipart.com_coordinate-plane-clipart_4578109.png" />
+    <None Remove="pngfind.com-refresh-icon-png-transparent-4296335.png" />
+    <None Remove="PROMOTED.png" />
+    <None Remove="TX_CompetitiveTierMovement_Demoted.png" />
+    <None Remove="TX_CompetitiveTierMovement_MajorDecrease.png" />
+    <None Remove="TX_CompetitiveTierMovement_MajorIncrease.png" />
+    <None Remove="TX_CompetitiveTierMovement_MediumDecrease.png" />
+    <None Remove="TX_CompetitiveTierMovement_MinorDecrease.png" />
+    <None Remove="TX_CompetitiveTierMovement_Promoted.png" />
+    <None Remove="TX_CompetitiveTier_Large_0.png" />
+    <None Remove="TX_CompetitiveTier_Large_10.png" />
+    <None Remove="TX_CompetitiveTier_Large_11.png" />
+    <None Remove="TX_CompetitiveTier_Large_12.png" />
+    <None Remove="TX_CompetitiveTier_Large_13.png" />
+    <None Remove="TX_CompetitiveTier_Large_14.png" />
+    <None Remove="TX_CompetitiveTier_Large_15.png" />
+    <None Remove="TX_CompetitiveTier_Large_16.png" />
+    <None Remove="TX_CompetitiveTier_Large_17.png" />
+    <None Remove="TX_CompetitiveTier_Large_18.png" />
+    <None Remove="TX_CompetitiveTier_Large_19.png" />
+    <None Remove="TX_CompetitiveTier_Large_20.png" />
+    <None Remove="TX_CompetitiveTier_Large_21.png" />
+    <None Remove="TX_CompetitiveTier_Large_22.png" />
+    <None Remove="TX_CompetitiveTier_Large_23.png" />
+    <None Remove="TX_CompetitiveTier_Large_24.png" />
+    <None Remove="TX_CompetitiveTier_Large_3.png" />
+    <None Remove="TX_CompetitiveTier_Large_4.png" />
+    <None Remove="TX_CompetitiveTier_Large_5.png" />
+    <None Remove="TX_CompetitiveTier_Large_6.png" />
+    <None Remove="TX_CompetitiveTier_Large_7.png" />
+    <None Remove="TX_CompetitiveTier_Large_8.png" />
+    <None Remove="TX_CompetitiveTier_Large_9.png" />
+    <None Remove="viewrefresh_104298.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autoupdater.NET.Official" Version="1.6.4" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="close-button.png" />
+    <Resource Include="cogs-gears-machine-preferences-settings-icon-cogs-icon-gears-651265.png" />
+    <Resource Include="DECREASE.png" />
+    <Resource Include="DEMOTED.png" />
+    <Resource Include="haven-splash-cropped.jpg" />
+    <Resource Include="INCREASE.png" />
+    <Resource Include="Loading_Screen_Haven.png" />
+    <Resource Include="MAJOR_DECREASE.png" />
+    <Resource Include="MAJOR_INCREASE.png" />
+    <Resource Include="MINOR_DECREASE.png" />
+    <Resource Include="MINOR_INCREASE.png" />
+    <Resource Include="PinClipart.com_coordinate-plane-clipart_4578109.png" />
+    <Resource Include="pngfind.com-refresh-icon-png-transparent-4296335.png" />
+    <Resource Include="PROMOTED.png" />
+    <Resource Include="TX_CompetitiveTier_Large_0.png" />
+    <Resource Include="TX_CompetitiveTier_Large_10.png" />
+    <Resource Include="TX_CompetitiveTier_Large_11.png" />
+    <Resource Include="TX_CompetitiveTier_Large_12.png" />
+    <Resource Include="TX_CompetitiveTier_Large_13.png" />
+    <Resource Include="TX_CompetitiveTier_Large_14.png" />
+    <Resource Include="TX_CompetitiveTier_Large_15.png" />
+    <Resource Include="TX_CompetitiveTier_Large_16.png" />
+    <Resource Include="TX_CompetitiveTier_Large_17.png" />
+    <Resource Include="TX_CompetitiveTier_Large_18.png" />
+    <Resource Include="TX_CompetitiveTier_Large_19.png" />
+    <Resource Include="TX_CompetitiveTier_Large_20.png" />
+    <Resource Include="TX_CompetitiveTier_Large_21.png" />
+    <Resource Include="TX_CompetitiveTier_Large_22.png" />
+    <Resource Include="TX_CompetitiveTier_Large_23.png" />
+    <Resource Include="TX_CompetitiveTier_Large_24.png" />
+    <Resource Include="TX_CompetitiveTier_Large_3.png" />
+    <Resource Include="TX_CompetitiveTier_Large_4.png" />
+    <Resource Include="TX_CompetitiveTier_Large_5.png" />
+    <Resource Include="TX_CompetitiveTier_Large_6.png" />
+    <Resource Include="TX_CompetitiveTier_Large_7.png" />
+    <Resource Include="TX_CompetitiveTier_Large_8.png" />
+    <Resource Include="TX_CompetitiveTier_Large_9.png" />
+    <Resource Include="viewrefresh_104298.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings1.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

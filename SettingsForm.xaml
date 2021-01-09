@@ -1,0 +1,42 @@
+﻿<Window x:Class="ValorantEloTracker.SettingsForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValorantEloTracker"
+        xmlns:properties="clr-namespace:ValorantEloTracker.Properties"
+        mc:Ignorable="d"
+        Title="SettingsForm" Height="440" Width="477" Background="#FF232323" WindowStyle="None" AllowsTransparency="True">
+    <Grid Margin="0,0,0,-6">
+        <Rectangle HorizontalAlignment="Center" Height="43" VerticalAlignment="Top" Width="477" Fill="#FF151414" MouseDown="Rectangle_MouseDown"/>
+        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Center" Text="Settings Form" TextWrapping="Wrap" VerticalAlignment="Top" Height="33" Width="300" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="24" FontFamily="Unispace" Margin="0,10,0,0" TextAlignment="Center"/>
+        <TextBox x:Name="usernamebox" HorizontalAlignment="Left" Margin="120,76,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" Background="{x:Null}" BorderBrush="White" Height="28" FontSize="18" BorderThickness="0,0,0,1" FontFamily="Unispace" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}"/>
+        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Username:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="115" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="20" FontFamily="Unispace" Margin="0,76,0,0" TextAlignment="Center"/>
+        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="115" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="20" FontFamily="Unispace" Margin="0,115,0,0" TextAlignment="Center"/>
+        <PasswordBox x:Name="passwordbox" HorizontalAlignment="Left" Margin="120,115,0,0" VerticalAlignment="Top" Width="222" Background="{x:Null}" BorderBrush="White" BorderThickness="0,0,0,1" Height="28" FontFamily="Unispace" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}"/>
+        <Button x:Name="savebtn" Content="Save" HorizontalAlignment="Left" Margin="349,366,0,0" VerticalAlignment="Top" Height="54" Width="118" Background="{x:Null}" BorderBrush="White" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="24" FontFamily="Unispace" Click="savebtn_Click"/>
+        <Button x:Name="closebtn" Content="Close" HorizontalAlignment="Left" Margin="224,366,0,0" VerticalAlignment="Top" Height="54" Width="118" Background="{x:Null}" BorderBrush="White" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="24" FontFamily="Unispace" Click="closebtn_Click"/>
+        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Region:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="115" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="20" FontFamily="Unispace" Margin="0,158,0,0" TextAlignment="Justify"/>
+        <ComboBox x:Name="regionselect" HorizontalAlignment="Left" Margin="120,158,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="{x:Null}">
+            <ComboBoxItem Content="North America"/>
+            <ComboBoxItem Content="European Union"/>
+            <ComboBoxItem Content="Korea"/>
+            <ComboBoxItem Content="Asia Pacific"/>
+        </ComboBox>
+        <ComboBox x:Name="colourselectionbox" HorizontalAlignment="Left" Margin="120,199,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" BorderBrush="{x:Null}">
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="Light Red"/>
+            <ComboBoxItem Content="Blue"/>
+            <ComboBoxItem Content="Light Blue"/>
+            <ComboBoxItem Content="Purple"/>
+            <ComboBoxItem Content="Light Purple"/>
+            <ComboBoxItem Content="Orange"/>
+            <ComboBoxItem Content="Light Orange"/>
+            <ComboBoxItem Content="Yellow"/>
+            <ComboBoxItem Content="Light Yellow"/>
+            <ComboBoxItem Content="White"/>
+        </ComboBox>
+        <TextBlock IsHitTestVisible="False" HorizontalAlignment="Left" Text="Colour:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="115" Foreground="{Binding Source={x:Static properties:Settings1.Default}, Path=colour, Mode=TwoWay}" FontSize="20" FontFamily="Unispace" Margin="0,196,0,0" TextAlignment="Justify"/>
+
+    </Grid>
+</Window>
